@@ -5,6 +5,7 @@
                     color: #fff;
                     overflow-x: hidden;
                 }
+                /*  
                 
                 body::before,
                 body::after {
@@ -27,9 +28,11 @@
                 }
                 
                 body::after {
+                    transform: scale(1.5);
                     right: -150px;
                     background: radial-gradient(circle at 70% 40%, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0.2) 40%, transparent 70%);
                 }
+                 */
                 
                 .topbar {
                     display: flex;
@@ -95,7 +98,7 @@
                 }
                 
                 .headerleft h1 {
-                    font-size: 32px;
+                    font-size: 50px;
                     margin: 10px 0;
                 }
                 
@@ -103,4 +106,24 @@
                     font-size: 18px;
                     color: #aaa;
                     margin: 10px 0;
+                }
+                
+                .start-btn {
+                    background: #9eff00;
+                    color: #000;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    font-weight: bold;
+                    border: none;
+                    margin-bottom: -400px;
+                    cursor: pointer;
+                }
+                
+                .phone {
+                    width: 700px;
+                    height: auto;
+                    max-width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                    margin-left: 200px;
                 }
