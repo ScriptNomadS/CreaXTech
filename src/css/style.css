@@ -87,36 +87,32 @@
                 }
                 
                 .highlight-btn {
-                    background: #9eff00;
-                    color: #000;
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-weight: bold;
+                    background-color: lch(91.14% 105.13 123.85);
+                    color: #000000;
                     border: none;
-                    margin-bottom: 20px;
                     cursor: pointer;
+                    border-radius: 8px;
+                    width: 250px;
+                    height: 20px;
+                    transition: 0.3s;
+                }
+                
+                button:hover {
+                    background-color: #9eff00;
+                    box-shadow: 0 0 0 5px lch(38.83% 53.18 122.72);
+                    color: #000000;
                 }
                 
                 .headerleft h1 {
-                    font-size: 50px;
+                    font-size: 60px;
                     margin: 10px 0;
                 }
                 
                 .agency {
-                    font-size: 18px;
-                    color: #aaa;
+                    font-size: 45px;
+                    color: #ffffff;
                     margin: 10px 0;
-                }
-                
-                .start-btn {
-                    background: #9eff00;
-                    color: #000;
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-weight: bold;
-                    border: none;
-                    margin-bottom: -400px;
-                    cursor: pointer;
+                    margin-left: 20px;
                 }
                 
                 .phone {
@@ -125,5 +121,63 @@
                     max-width: 100%;
                     display: block;
                     margin: 0 auto;
-                    margin-left: 200px;
+                    margin-left: 120px;
+                }
+                
+                .features {
+                    font-size: 25px;
+                    color: #ffffff;
+                    margin: 10px 0;
+                    margin-left: 60px;
+                }
+                
+                .start-btn {
+                    position: relative;
+                    top: 60px;
+                    right: 365px;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: 1em 2.5em;
+                    display: inline-block;
+                    cursor: pointer;
+                    border-radius: 6em;
+                    transition: all 0.2s;
+                    border: none;
+                    font-family: inherit;
+                    font-weight: 500;
+                    color: black;
+                    background-color: #9eff00;
+                }
+                
+                .start-btn:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                }
+                
+                .start-btn:active {
+                    transform: translateY(-1px);
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                }
+                
+                .start-btn::after {
+                    content: "";
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 100px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: all 0.4s;
+                }
+                
+                .start-btn::after {
+                    background-color: #9dff008a;
+                }
+                
+                .start-btn:hover::after {
+                    transform: scaleX(1.4) scaleY(1.6);
+                    opacity: 0;
                 }
