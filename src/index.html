@@ -7,6 +7,9 @@
     <title>CreaXTech Digital Agency</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- 3d model -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 </head>
 
 <body>
@@ -15,12 +18,12 @@
 
     <header>
         <div class="logo">
-            <img src="../src/img/logo.png" alt="Логотип">
+            <a href="#hero"><img src="../src/img/logo.png" alt="Логотип"></a>
             <h2>CreaXTech</h2>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Про нас</a></li>
+                <li><a href="#dm">Про нас</a></li>
                 <li><a href="#">Наші послуги</a></li>
                 <li><a href="#">Гарантії</a></li>
                 <li><a href="#">Статистика</a></li>
@@ -42,7 +45,7 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-text">
             <h1>CreaXTech Digital Agency</h1>
             <h2>Агенція онлайн-маркетингу</h2>
@@ -53,8 +56,64 @@
             <div class="circle circle1"></div>
             <div class="circle circle2"></div>
             <div class="circle circle3"></div>
+            <model-viewer
+                src="../src/img/3dmodel/earth_globe_hologram_glb.glb"
+                alt="3D голограма Землі"
+                auto-rotate
+                camera-controls
+                disable-zoom
+                interaction-prompt="none"
+                exposure="1.1"
+                shadow-intensity="0"
+                environment-image="legacy"
+                ar="false"
+                style="--mv-lit: none;">
+            </model-viewer>
+
         </div>
     </section>
+
+    <!-- ==================== DIGITAL / МАРКЕТИНГ ==================== -->
+<section class="dm" id="dm">
+  <div class="dm__container">
+    <!-- ЛІВА ЧАСТИНА -->
+    <div class="dm__left">
+      <h2 class="dm__super">DIGITAL</h2>
+      <h2 class="dm__title">МАРКЕТИНГ</h2>
+
+      <p class="dm__strap">
+        CreaXTech Digital Agency: Ваш надійний партнер у розвитку бізнесу
+      </p>
+
+      <div class="dm__about">
+        <h3 class="dm__about-title">Про нас</h3>
+
+        <p class="dm__lead">
+          <span class="dm__chev">»</span>
+          <strong>CreaXTech Digital Agency</strong> — це команда професіоналів, яка допомагає бізнесам розвиватися онлайн.
+        </p>
+
+        <ul class="dm__badges" aria-label="Наші переваги">
+          <li class="dm__badge">Досвід</li>
+          <li class="dm__badge">Професіоналізм</li>
+          <li class="dm__badge">Тривале партнерство</li>
+          <li class="dm__badge">Надійність</li>
+          <li class="dm__badge">Якість</li>
+        </ul>
+
+        <p class="dm__note">
+          <span class="dm__dot">•</span>
+          Усе, що ми створюємо — під чітку ціль і потреби саме твого бізнесу. Ніяких шаблонів — тільки індивідуальний підхід, сильна візуальна подача, креатив і стратегія, що працює.
+        </p>
+      </div>
+    </div>
+
+    <!-- ПРАВА ЧАСТИНА -->
+    
+  </div>
+</section>
+
+
 </body>
 
 </html>
