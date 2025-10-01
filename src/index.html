@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- 3d model -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
 </head>
 
 <body>
@@ -24,27 +23,26 @@
         <nav>
             <ul>
                 <li><a href="#dm">Про нас</a></li>
-                <li><a href="#">Наші послуги</a></li>
+                <li><a href="#services">Наші послуги</a></li>
                 <li><a href="#">Гарантії</a></li>
                 <li><a href="#">Статистика</a></li>
-                <li><a href="#">Консультація</a>
-                </li>
+                <li><a href="#consult">Консультація</a></li>
             </ul>
         </nav>
         <div aria-label="User Login Button" tabindex="0" role="button" class="user-profile">
             <div class="user-profile-inner">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <g data-name="Layer 2" id="Layer_2">
-        <path
-          d="m15.626 11.769a6 6 0 1 0 -7.252 0 9.008 9.008 0 0 0 -5.374 8.231 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 9.008 9.008 0 0 0 -5.374-8.231zm-7.626-4.769a4 4 0 1 1 4 4 4 4 0 0 1 -4-4zm10 14h-12a1 1 0 0 1 -1-1 7 7 0 0 1 14 0 1 1 0 0 1 -1 1z"
-        ></path>
-      </g>
-    </svg>
-
+                    <g data-name="Layer 2" id="Layer_2">
+                        <path
+                            d="m15.626 11.769a6 6 0 1 0 -7.252 0 9.008 9.008 0 0 0 -5.374 8.231 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 9.008 9.008 0 0 0 -5.374-8.231zm-7.626-4.769a4 4 0 1 1 4 4 4 4 0 0 1 -4-4zm10 14h-12a1 1 0 0 1 -1-1 7 7 0 0 1 14 0 1 1 0 0 1 -1 1z">
+                        </path>
+                    </g>
+                </svg>
             </div>
         </div>
     </header>
 
+    <!-- ==================== HERO ==================== -->
     <section class="hero" id="hero">
         <div class="hero-text">
             <h1>CreaXTech Digital Agency</h1>
@@ -56,63 +54,88 @@
             <div class="circle circle1"></div>
             <div class="circle circle2"></div>
             <div class="circle circle3"></div>
-            <model-viewer
-                src="../src/img/3dmodel/earth_globe_hologram_glb.glb"
-                alt="3D голограма Землі"
-                auto-rotate
-                camera-controls
-                disable-zoom
-                interaction-prompt="none"
-                exposure="1.1"
-                shadow-intensity="0"
-                environment-image="legacy"
-                ar="false"
-                style="--mv-lit: none;">
+            <model-viewer src="../src/img/3dmodel/earth_globe_hologram_glb.glb" alt="3D голограма Землі" auto-rotate camera-controls disable-zoom interaction-prompt="none" exposure="1.1" shadow-intensity="0" environment-image="legacy" ar="false" style="--mv-lit: none;">
             </model-viewer>
-
         </div>
     </section>
 
     <!-- ==================== DIGITAL / МАРКЕТИНГ ==================== -->
-<section class="dm" id="dm">
-  <div class="dm__container">
-    <!-- ЛІВА ЧАСТИНА -->
-    <div class="dm__left">
-      <h2 class="dm__super">DIGITAL</h2>
-      <h2 class="dm__title">МАРКЕТИНГ</h2>
+    <section class="dm" id="dm">
+        <div class="dm__container">
+            <!-- ЛІВА ЧАСТИНА -->
+            <div class="dm__left">
+                <h2 class="dm__super">DIGITAL</h2>
+                <h2 class="dm__title">МАРКЕТИНГ</h2>
 
-      <p class="dm__strap">
-        CreaXTech Digital Agency: Ваш надійний партнер у розвитку бізнесу
-      </p>
+                <p class="dm__strap">
+                    CreaXTech Digital Agency: Ваш надійний партнер у розвитку бізнесу
+                </p>
 
-      <div class="dm__about">
-        <h3 class="dm__about-title">Про нас</h3>
+                <div class="dm__about">
+                    <h3 class="dm__about-title">Про нас</h3>
 
-        <p class="dm__lead">
-          <span class="dm__chev">»</span>
-          <strong>CreaXTech Digital Agency</strong> — це команда професіоналів, яка допомагає бізнесам розвиватися онлайн.
-        </p>
+                    <p class="dm__lead">
+                        <span class="dm__chev">»</span>
+                        <strong>CreaXTech Digital Agency</strong> — це команда професіоналів, яка допомагає бізнесам розвиватися онлайн.
+                    </p>
 
-        <ul class="dm__badges" aria-label="Наші переваги">
-          <li class="dm__badge">Досвід</li>
-          <li class="dm__badge">Професіоналізм</li>
-          <li class="dm__badge">Тривале партнерство</li>
-          <li class="dm__badge">Надійність</li>
-          <li class="dm__badge">Якість</li>
-        </ul>
+                    <ul class="dm__badges" aria-label="Наші переваги">
+                        <li class="dm__badge">Досвід</li>
+                        <li class="dm__badge">Професіоналізм</li>
+                        <li class="dm__badge">Тривале партнерство</li>
+                        <li class="dm__badge">Надійність</li>
+                        <li class="dm__badge">Якість</li>
+                    </ul>
 
-        <p class="dm__note">
-          <span class="dm__dot">•</span>
-          Усе, що ми створюємо — під чітку ціль і потреби саме твого бізнесу. Ніяких шаблонів — тільки індивідуальний підхід, сильна візуальна подача, креатив і стратегія, що працює.
-        </p>
-      </div>
-    </div>
+                    <p class="dm__note">
+                        <span class="dm__dot">•</span> Усе, що ми створюємо — під чітку ціль і потреби саме твого бізнесу. Ніяких шаблонів — тільки індивідуальний підхід, сильна візуальна подача, креатив і стратегія, що працює.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <!-- ПРАВА ЧАСТИНА -->
-    
-  </div>
-</section>
 
+
+
+        <!-- ==================== НАШІ ПОСЛУГИ ==================== -->
+        <section class="services" id="services">
+            <div class="services__container">
+                <h2 class="section-title">Наші послуги</h2>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>Digital Маркетинг</h3>
+                        <p>Просування бізнесу в онлайні через ефективні стратегії.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>SEO Оптимізація</h3>
+                        <p>Оптимізація сайту для пошукових систем та зростання трафіку.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Дизайн та Брендинг</h3>
+                        <p>Унікальний візуальний стиль, що виділяє ваш бізнес.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💡</div>
+                        <h3>Стратегія</h3>
+                        <p>Аналіз та побудова персональних стратегій розвитку.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== КОНСУЛЬТАЦІЯ ==================== -->
+        <section class="consult" id="consult">
+            <h2 class="section-title">Отримати консультацію</h2>
+            <form class="consult-form">
+                <input type="text" placeholder="Ваше ім’я" required>
+                <input type="email" placeholder="Ваш Email" required>
+                <textarea placeholder="Ваше повідомлення"></textarea>
+                <button type="submit" class="btn-main">Відправити</button>
+            </form>
+        </section>
 
 </body>
 
